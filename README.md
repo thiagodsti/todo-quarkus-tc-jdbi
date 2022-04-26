@@ -1,6 +1,5 @@
 # TodoApplication
 ![CI](https://github.com/thiagodsti/todo-quarkus-tc-jdbi/actions/workflows/ci.yaml/badge.svg?branch=main)
-[![Coverage](https://codecov.io/gh/thiagodsti/todo-quarkus-tc-jdbi/branch/main/graph/badge.svg?token=0FW8UXB870)](https://codecov.io/gh/thiagodsti/todo-quarkus-tc-jdbi)
 
 This is a simple project with quarkus + testcontainers + JDBI + Reactive and Postgres.
 Everything here is reactive except for the connection with the database.
@@ -39,10 +38,8 @@ docker run -d -p 5432:5432 \
 ```
 Run the application
 ```bash
-mvn quarkus:run
+mvn quarkus dev
 ```
-
-Swagger: http://localhost:8080/swagger-ui.html
 
 ### Tests
 ```bash
